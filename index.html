@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nishita Bhadouria | Portfolio</title>
+  
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<section class="landing-page">
+  <div class="landing-content">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Discover my projects, achievements, and creative journey</p>
+    <button id="enterSiteBtn">Enter Portfolio</button>
+  </div>
+</section>
+
+<header class="navbar">
+  <div class="logo">✨ Nishita</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#journey">Journey</a> <a href="#journal">Journal</a>
+    <a href="#contact">Contact</a>
+    <button id="themeToggle">🌙</button>
+  </nav>
+</header>
+
+<section class="hero reveal" id="home">
+  <div class="hero-layout">
+    <div class="hero-name">
+      <h1>NISHITA</h1>
+      <h2>BHADOURIA</h2>
+      <p></p>
+    </div>
+    <div class="hero-image">
+      <img src="assets/profile.jpg" alt="Nishita Profile Photo">
+    </div>
+  </div>
+</section>
+
+<section class="about reveal" id="about">
+  <span class="section-number">01</span>
+  <h2>Who I Am</h2>
+
+  <div class="about-wrapper">
+    <div class="about-left">
+      <p id="aboutText"></p>
+
+      <blockquote class="about-quote">
+        “I believe technology should feel human.”
+      </blockquote>
+
+      <div class="info-box">
+        Currently studying at 
+        <strong>Fr. Conceicao Rodrigues College of Engineering</strong>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card reveal">
+        <h3>What I Do</h3>
+        <p>
+          I design and develop structured solutions by combining programming,
+          logical thinking, and attention to detail.
+        </p>
+      </div>
+
+      <div class="card reveal">
+        <h3>My Passion</h3>
+        <p>
+          I am passionate about continuous learning, problem-solving, and
+          creative expression through technology.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="journey-section reveal" id="journey">
+  <span class="section-number">02</span>
+  <h2 class="journey-title">My Journey</h2>
+  
+  <div id="journeyGrid"></div>
+</section>
+
+<section class="skills reveal" id="skills">
+  <span class="section-number">03</span>
+  <h2>Skills</h2>
+  <div id="skillsGrid"></div>
+</section>
+
+<section class="journal reveal" id="journal">
+  <span class="section-number">04</span>
+  <h2>Journal & Achievements</h2>
+
+  <div class="journal-grid">
+    <div class="journal-card reveal">
+      <span class="journal-tag">ACHIEVEMENT</span>
+      <img src="assets/achievement1.jpg" alt="Achievement">
+      <h4>HSC Excellence</h4>
+      <p>Achieved 90.6% in HSC Boards.</p>
+      <div class="journal-links">
+        <a href="#" target="_blank">💼 LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="journal-card reveal">
+      <span class="journal-tag">CERTIFICATION</span>
+      <img src="assets/certificate1.jpg" alt="Certificate">
+      <h4>Technical Certification</h4>
+      <p>Core programming expertise certification.</p>
+      <div class="journal-links">
+        <a href="#" target="_blank">📄 View PDF</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="cinema-gallery reveal" id="cinema">
+  <span class="section-number">05</span>
+  <div class="cinema-intro-box">
+    <h2>The Cinematic Lens</h2>
+    <p>
+      I am a deep believer that <strong>cinema is the ultimate art form</strong>. 
+      It’s where technology meets human emotion. When I'm not coding, I'm analyzing 
+      frames, storytelling techniques, and the visual language of film.
+      For me, film is the most powerful intersection of technology and empathy.
+       I don't just watch movies; I study the frames, the light, and the stories that define our human experience. Here are some of my recent favourites.</p>
+  </div>
+
+ <div class="cinematic-grid">
+    <div class="movie-item">
+      <img src="c:\Users\nishi\OneDrive\Pictures\Screenshots\poster1.jpg.png" alt="Dead Poets Society">
+      <h3>Dead Poets Society</h3>
+      <p>A breathtaking exploration of time, love, and the cosmic unknown.</p>
+    </div>
+
+    <div class="movie-item">
+      <img src=" c:\Users\nishi\OneDrive\Pictures\Screenshots\poster2.jpg.png" alt="The Perks Of Being A Wallflower">
+      <h3>The Perks Of Being A Wallflower</h3>
+      <p>A masterclass in visual storytelling and the beauty of unspoken words.</p>
+    </div>
+
+    <div class="movie-item">
+      <img src=" c:\Users\nishi\OneDrive\Pictures\Screenshots\poster4.jpg.png " alt="Stranger Things">
+      <h3>Stranger</h3>
+      <p>A modern look at fate and the "what ifs" that linger across lifetimes.</p>
+    </div>
+
+    <div class="movie-item">
+      <img src="assets/aftersun.jpg" alt="Aftersun">
+      <h3>Aftersun</h3>
+      <p>A delicate, heartbreaking fragment of memory captured through a lens.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact reveal" id="contact">
+  <span class="section-number">05</span>
+  <h2 class="contact-title">Get In Touch</h2>
+  <p class="contact-subtitle">Let’s build something meaningful together</p>
+
+  <div class="contact-grid">
+    <form id="contactForm"> <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button id="sendBtn" type="submit">
+        <span class="btn-text">Send Message</span>
+        <span class="loader"></span>
+      </button>
+      <div class="success-msg">Message sent successfully ✨</div>
+    </form>
+
+    <div class="links">
+  <p>📧 Email: <a href="nishbhad07@gmail.com">yourname@email.com</a></p>
+  
+  <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/nishita-bhadouria-51392b397?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">nishita-bhadouria</a></p>
+  
+  <p>📸 Instagram: <a href="https://www.instagram.com/nishitax27?igsh=MWo1eWYxZ2prMGl3eA==" target="_blank">@creative_nishita</a></p>
+</div>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
